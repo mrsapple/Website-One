@@ -16,6 +16,7 @@ header nav{
     left: 0;
     top: 0;
     width: 100%;
+    z-index: 2000;
 }
 nav .navbar{
     width: 90%;
@@ -128,5 +129,32 @@ nav .navbar .logo{
      border: none;
      outline: none;
      background: linear-gradient(135deg, #2afadf 10%, #c346c2 100%);
-
+     transition: all 0.3s ease;
+}
+.content .buttons button:hover{
+    transform: scale(0.98);
+}
+header .girl img{
+    position: absolute;
+    right: 75px;
+    bottom: 0;
+    height: 95%;
+}
+header .media-icons{
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.media-icons a{
+    margin-left: 8px 0;
+    font-size: 20px;
+    color: #2c3e50;
+    font-weight: 500;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+.media-icons a:hover{
+    opacity: 1;
 }
